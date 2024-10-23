@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50; /* Green background for the header */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .logo {
+            max-width: 100px; /* Simple logo styling */
+        }
+
+        .signup-button {
+            background-color: #f44336; /* Red background for the button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333; /* Dark background for the footer */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Mobile styles */
+        @media (max-width: 600px) {
+            body {
+                background-color: #f0f0f0; /* Light background for mobile */
+            }
+            header {
+                font-size: 24px;
+            }
+            .signup-button {
+                width: 100%;
+            }
+        }
+
+        /* Tablet styles */
+        @media (min-width: 601px) and (max-width: 900px) {
+            body {
+                background-color: #e0e0e0; /* Gray background for tablet */
+            }
+            header {
+                font-size: 28px;
+            }
+            .signup-button {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1>Welcome to Our Website</h1>
+</header>
+
+<main>
+    <button class="signup-button">Sign Up</button>
+</main>
+
+<footer>
+    <p>&copy; 2024 Your Company</p>
+</footer>
+
+</body>
+</html>
